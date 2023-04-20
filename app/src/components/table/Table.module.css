@@ -1,0 +1,19 @@
+.root {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.row,
+.col {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.row:nth-child(even) {
+  background-color: #00bbd48a;
+}
+
+.row:hover {
+  background-color: #00bbd4;
+}
