@@ -1,7 +1,6 @@
 import styles from "./Table.module.css";
 
 export default function Table({ data }) {
-    console.log(styles)
   return (
     <table className={styles.root}>
       <thead>
