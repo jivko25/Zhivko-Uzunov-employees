@@ -8,7 +8,7 @@ export const readFileFromInput = (file, onChangeValue) => {
         const resultObject = res.data.map((item) => {
             const currentDate = new Date(Date.now());
             const formattedDateNow = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1 > 10 ? currentDate.getMonth() + 1 : `0${currentDate.getMonth() + 1}`}-${currentDate.getDate()}`
-            const DateTo = item.DateTo === 'null' ? formattedDateNow : item.DateTo;
+            const DateTo = item.DateTo.toLowerCase() === 'null' ? formattedDateNow : item.DateTo;
             return {
                 ...item,
                 DateTo
