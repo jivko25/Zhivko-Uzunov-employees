@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 import { readFileFromInput } from "./utils/readFile.util";
 import Table from "./components/table/Table";
-import "./App.css";
 import Container from "./components/container/Container.jsx";
 
 function App() {
@@ -68,7 +67,7 @@ function App() {
           <h2>
             Longest collaboration between Employee with id{" "}
             {longestCollaboration.emp1} and Employee with id{" "}
-            {longestCollaboration.emp2} for {longestCollaboration.days}
+            {longestCollaboration.emp2} for {longestCollaboration.days} days.
           </h2>
           <h2>All Employees</h2>
         </>
